@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "big-r-reader", "big-r-reader.csproj", "{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Debug|iPhone.Build.0 = Debug|iPhone
+		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Release|iPhone.ActiveCfg = Release|iPhone
+		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Release|iPhone.Build.0 = Release|iPhone
+		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = big-r-reader.csproj
+	EndGlobalSection
+EndGlobal
