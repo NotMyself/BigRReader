@@ -103,10 +103,10 @@ namespace UI
 					switch (indexPath.Row)
 					{
 					case 0:
-						//nextController = new BlogItemsViewController(UITableViewStyle.Plain);
+						nextController = new NewsItemsViewController(UITableViewStyle.Plain);
 						break;
 					case 1:
-						//nextController = new NewsItemsViewController(UITableViewStyle.Plain);
+						nextController = new TwitterItemsViewController(UITableViewStyle.Plain);
 						break;
 					default:
 						break;
