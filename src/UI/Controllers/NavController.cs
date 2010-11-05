@@ -1,7 +1,7 @@
 using System;
 using MonoTouch.UIKit;
 
-namespace bigrreader
+namespace UI
 {
 	public class NavController : UINavigationController
 	{

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "big-r-reader", "big-r-reader.csproj", "{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "src\UI\UI.csproj", "{D2171F1F-FECE-480F-B1ED-BF22695CCDDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,16 +11,16 @@ Global
 		Release|iPhone = Release|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Debug|iPhone.Build.0 = Debug|iPhone
-		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Release|iPhone.ActiveCfg = Release|iPhone
-		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Release|iPhone.Build.0 = Release|iPhone
-		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{FFC7CBCF-3E0B-4A28-8842-C8D28D967B85}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{D2171F1F-FECE-480F-B1ED-BF22695CCDDA}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{D2171F1F-FECE-480F-B1ED-BF22695CCDDA}.Debug|iPhone.Build.0 = Debug|iPhone
+		{D2171F1F-FECE-480F-B1ED-BF22695CCDDA}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{D2171F1F-FECE-480F-B1ED-BF22695CCDDA}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{D2171F1F-FECE-480F-B1ED-BF22695CCDDA}.Release|iPhone.ActiveCfg = Release|iPhone
+		{D2171F1F-FECE-480F-B1ED-BF22695CCDDA}.Release|iPhone.Build.0 = Release|iPhone
+		{D2171F1F-FECE-480F-B1ED-BF22695CCDDA}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{D2171F1F-FECE-480F-B1ED-BF22695CCDDA}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = big-r-reader.csproj
+		StartupItem = src\UI\UI.csproj
 	EndGlobalSection
 EndGlobal

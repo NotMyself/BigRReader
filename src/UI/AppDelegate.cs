@@ -4,7 +4,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace bigrreader
+namespace UI
 {
 	[Register("AppDelegate")]
 	public class AppDelegate : UIApplicationDelegate

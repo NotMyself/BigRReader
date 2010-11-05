@@ -4,7 +4,7 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace bigrreader
+namespace UI
 {
 	public class MainMenuViewController : UITableViewController
 	{

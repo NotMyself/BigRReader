@@ -4,7 +4,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace bigrreader
+namespace UI
 {
 	public class Application
 	{
@@ -14,3 +14,4 @@ namespace bigrreader
 		}
 	}
 }
+
