@@ -87,9 +87,8 @@ namespace UI
 			public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
             {
 				var item = items[indexPath.Row];
-				//TwitterItemViewController twitterView = new TwitterItemViewController(i);
-				//twitterView.Title = i.Title;
-				//controller.NavigationController.PushViewController(twitterView, true);
+				var itemView = new RssFeedItemViewController(item);
+				controller.NavigationController.PushViewController(itemView, true);
 			}
         }
 }

@@ -7,17 +7,22 @@ using MonoTouch.UIKit;
 
 namespace UI
 {
-	public class AboutViewController : UIViewController
+	public class RssFeedItemViewController: UIViewController
 	{
-		public AboutViewController() : base()
+		FeedItem item;
+		
+		public RssFeedItemViewController(FeedItem item) : base()
 		{
+			this.item = item;
+			this.Title = item.Title;
 		}
 		
 		public UIWebView webView;
 		
-		public override void ViewDidLoad ()
+		public override void ViewDidLoad()
         {
-            base.ViewDidLoad ();
+            base.ViewDidLoad();
+			
 			
 			webView = new UIWebView()
 			{
@@ -40,11 +45,10 @@ namespace UI
 		private string FormatText()
 		{
 			var sb = new StringBuilder();
-            var html_content = "<h2>'<b>You can't middle manage your way to innovation.</b>' <br>--Chad Myers</h2>";
-			
+            
 			sb.Append("<html><head><meta name=\"viewport\" content=\"width=320\"/>" +
 				"<style>body,b,p,h2{font-family:Helvetica;}</style></head><body>");
-			sb.Append(html_content);
+			sb.Append(item.Content);
 			sb.Append("</body></html>");
 				
 			return sb.ToString();

@@ -92,6 +92,7 @@
     <Compile Include="Controllers\RssFeedViewController.cs" />
     <Compile Include="Services\IFetchFeedItems.cs" />
     <Compile Include="Models\FeedItem.cs" />
+    <Compile Include="Controllers\RssFeedItemViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />

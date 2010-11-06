@@ -27,8 +27,9 @@ namespace UI
 								.Elements("item")
 								.Select(x => new FeedItem 
 						        				{ 
-													Title = x.Element("title").Value,								 //Thu, 04 Nov 2010 16:44:08 +0000
-													PubDate = x.Element("pubDate").Value//DateTime.ParseExact(, "ddd, dd MMM yyyy HH:mm:ss zzz", null)
+													Title = x.Element("title").Value,
+													PubDate = x.Element("pubDate").Value,
+													Content = x.Element("description").Value
 												});
 
 			}
