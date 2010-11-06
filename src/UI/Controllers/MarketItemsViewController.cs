@@ -9,15 +9,15 @@ using MonoTouch.UIKit;
 
 namespace UI
 {
-	public class NewsItemsViewController : UITableViewController
+	public class MarketItemsViewController: UITableViewController
 	{
-		public NewsItemsViewController(UITableViewStyle style) : base(style) {}
+		public MarketItemsViewController(UITableViewStyle style) : base(style) {}
 				
         public override void ViewDidLoad ()
         {
             base.ViewDidLoad ();
 			
-			Title = "Russell Newsroom";
+			Title = "Market Insights";
         }	
 	}
 }

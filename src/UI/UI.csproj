@@ -83,6 +83,7 @@
     <Compile Include="Controllers\AboutViewController.cs" />
     <Compile Include="Controllers\NewsItemsViewController.cs" />
     <Compile Include="Controllers\TwitterItemsViewController.cs" />
+    <Compile Include="Controllers\MarketItemsViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />

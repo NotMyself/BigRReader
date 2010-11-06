@@ -35,8 +35,9 @@ namespace UI
 			
 			items = new List<string>()
 			{
-				"Russell News Feed",
-				"Russell Twitter Feed"
+				"Market Insights",
+				"Russell Newsroom",
+				"Twitter"
 			};
 			
 			UIBarButtonItem about = new UIBarButtonItem("About", UIBarButtonItemStyle.Bordered, null);
@@ -103,9 +104,12 @@ namespace UI
 					switch (indexPath.Row)
 					{
 					case 0:
-						nextController = new NewsItemsViewController(UITableViewStyle.Plain);
+						nextController = new MarketItemsViewController(UITableViewStyle.Plain);
 						break;
 					case 1:
+						nextController = new NewsItemsViewController(UITableViewStyle.Plain);
+						break;
+					case 2:
 						nextController = new TwitterItemsViewController(UITableViewStyle.Plain);
 						break;
 					default:
