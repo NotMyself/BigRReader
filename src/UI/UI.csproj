@@ -88,9 +88,7 @@
     <Compile Include="Controllers\NavController.cs" />
     <Compile Include="Controllers\MainMenuViewController.cs" />
     <Compile Include="Controllers\AboutViewController.cs" />
-    <Compile Include="Controllers\NewsItemsViewController.cs" />
-    <Compile Include="Controllers\TwitterItemsViewController.cs" />
-    <Compile Include="Controllers\MarketItemsViewController.cs" />
+    <Compile Include="Controllers\RssFeedViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />

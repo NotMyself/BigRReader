@@ -89,7 +89,10 @@ namespace UI
 	public class TableViewDelegate : UITableViewDelegate
         {
 			private MainMenuViewController controller;
-			
+			private Uri twitterFeed = new Uri("http://twitter.com/statuses/user_timeline/47657595.rss");
+			private Uri newsFeed = new Uri("http://feeds.feedburner.com/RussellcomNewsRelease");
+			private Uri marketFeed = new Uri("http://feeds.feedburner.com/RussellInvestmentsEducationCenter");
+		
             public TableViewDelegate(MainMenuViewController controller)
             {
 				this.controller = controller;
@@ -104,13 +107,13 @@ namespace UI
 					switch (indexPath.Row)
 					{
 					case 0:
-						nextController = new MarketItemsViewController(UITableViewStyle.Plain);
+						nextController = new RssFeedViewController(marketFeed, "Market Insights");
 						break;
 					case 1:
-						nextController = new NewsItemsViewController(UITableViewStyle.Plain);
+						nextController = new RssFeedViewController(newsFeed, "Russell Newsroom");
 						break;
 					case 2:
-						nextController = new TwitterItemsViewController(UITableViewStyle.Plain);
+						nextController = new RssFeedViewController(twitterFeed, "Twitter");
 						break;
 					default:
 						break;
