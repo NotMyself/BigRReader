@@ -31,7 +31,7 @@ namespace UI
 		{
 			base.ViewDidLoad();
 			
-			NavigationItem.TitleView = new UIImageView(/*UIImage.FromFile("Images/snakeoil.png")*/);
+			NavigationItem.TitleView = new UIImageView(UIImage.FromFile("Images/RusLogoStackBlkPPT.png"));
 			
 			items = new List<string>()
 			{
