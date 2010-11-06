@@ -16,6 +16,12 @@
     <AssemblyName>UI</AssemblyName>
     <MtouchMinimumOS>3.0</MtouchMinimumOS>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <BundleIcon>Images\icons\icon-57.png</BundleIcon>
+    <BundleIconHigh>Images\icons\icon-114.png</BundleIconHigh>
+    <BundleIconIPad>Images\icons\icon-72.png</BundleIconIPad>
+    <BundleIconSpotlight>Images\icons\icon-29.png</BundleIconSpotlight>
+    <BundleIconSpotlightHigh>Images\icons\icon-58.png</BundleIconSpotlightHigh>
+    <BundleIconIPadSpotlight>Images\icons\icon-50.png</BundleIconIPadSpotlight>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,6 +35,7 @@
     <ConsolePause>false</ConsolePause>
     <MtouchSdkVersion>3.2</MtouchSdkVersion>
     <MtouchLink>None</MtouchLink>
+    <MtouchI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -83,7 +90,6 @@
     <Compile Include="Controllers\AboutViewController.cs" />
     <Compile Include="Controllers\NewsItemsViewController.cs" />
     <Compile Include="Controllers\TwitterItemsViewController.cs" />
-    <Compile Include="Controllers\MarketItemsViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
@@ -95,6 +101,12 @@
     <Content Include="Images\RusLogoStackBlkPPT.png" />
     <Content Include="Images\RusLogoStackWhtPPT.png" />
     <Content Include="Images\stripe.png" />
+    <Content Include="Controllers\MarketItemsViewController.cs" />
+    <Content Include="Images\icons\icon-29.png" />
+    <Content Include="Images\icons\icon-50.png" />
+    <Content Include="Images\icons\icon-57.png" />
+    <Content Include="Images\icons\icon-58.png" />
+    <Content Include="Images\icons\icon-72.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
