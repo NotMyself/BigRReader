@@ -19,10 +19,7 @@ namespace UI
         {
             base.ViewDidLoad ();
 			
-			webView = new UIWebView()
-			{
-				ScalesPageToFit = true
-			};
+			webView = new UIWebView { ScalesPageToFit = true };
 			
 			webView.LoadStarted += delegate {
 				UIApplication.SharedApplication.NetworkActivityIndicatorVisible = true;

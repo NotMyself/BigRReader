@@ -10,7 +10,7 @@ namespace UI
 		
 		public override void ViewDidLoad ()
 		{
-			MainMenuViewController table = new MainMenuViewController(UITableViewStyle.Plain);
+			var table = new MainMenuViewController(UITableViewStyle.Plain);
 			SetViewControllers(new UIViewController[] {table},false);
 			
 			base.ViewDidLoad ();
