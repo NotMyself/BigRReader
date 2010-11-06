@@ -90,6 +90,7 @@
     <Compile Include="Controllers\AboutViewController.cs" />
     <Compile Include="Controllers\NewsItemsViewController.cs" />
     <Compile Include="Controllers\TwitterItemsViewController.cs" />
+    <Compile Include="Controllers\MarketItemsViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
@@ -101,7 +102,6 @@
     <Content Include="Images\RusLogoStackBlkPPT.png" />
     <Content Include="Images\RusLogoStackWhtPPT.png" />
     <Content Include="Images\stripe.png" />
-    <Content Include="Controllers\MarketItemsViewController.cs" />
     <Content Include="Images\icons\icon-29.png" />
     <Content Include="Images\icons\icon-50.png" />
     <Content Include="Images\icons\icon-57.png" />
