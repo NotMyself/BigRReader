@@ -29,7 +29,8 @@ namespace UI
 						        				{ 
 													Title = x.Element("title").Value,
 													PubDate = x.Element("pubDate").Value,
-													Content = x.Element("description").Value
+													Content = x.Element("description").Value,
+													Link = x.Element("link").Value
 												});
 
 			}

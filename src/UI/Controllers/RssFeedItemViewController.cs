@@ -49,6 +49,8 @@ namespace UI
 			sb.Append("<html><head><meta name=\"viewport\" content=\"width=320\"/>" +
 				"<style>body,b,p,h2{font-family:Helvetica;}</style></head><body>");
 			sb.Append(item.Content);
+			sb.Append("<br><br>");
+			sb.AppendFormat("<p><a href='{0}'>Read More</a></p>", item.Link);
 			sb.Append("</body></html>");
 				
 			return sb.ToString();
