@@ -3,4 +3,5 @@
 *.usertasks
 *.pidb
 bin/
+test-results/
 
