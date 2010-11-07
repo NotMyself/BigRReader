@@ -66,7 +66,7 @@ namespace UI
 			cell.TextLabel.LineBreakMode = UILineBreakMode.TailTruncation;
             cell.TextLabel.Text = items[indexPath.Row].Title;
 			cell.DetailTextLabel.Font = UIFont.FromName("Helvetica", 12.0f);
-			cell.DetailTextLabel.Text = items[indexPath.Row].PublishedDate;
+			cell.DetailTextLabel.Text = items[indexPath.Row].PublishedDate.ToString();
 			
 			cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
             return cell;

@@ -21,25 +21,26 @@ namespace UI
 		
 		public override void ViewDidLoad()
         {
-            base.ViewDidLoad();
+			//base.ViewDidLoad();
 			
+			var webFrame = new RectangleF (0, 0, this.View.Frame.Width, this.View.Frame.Height - 44);
 			
-			webView = new UIWebView { ScalesPageToFit = true, BackgroundColor = UIColor.Cyan  };
-			webView.Frame = new RectangleF (0, 0, this.View.Frame.Width, this.View.Frame.Height - 44);
-			
+			webView = new UIWebView (webFrame) {
+				BackgroundColor = UIColor.White,
+				ScalesPageToFit = true,
+				AutoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+			};
+						
 			webView.LoadStarted += delegate {
 				UIApplication.SharedApplication.NetworkActivityIndicatorVisible = true;
 			};
 			webView.LoadFinished += delegate {
 				UIApplication.SharedApplication.NetworkActivityIndicatorVisible = false;
-				webView.SizeToFit();
 			};
-			
-
-			webView.LoadRequest(new NSUrlRequest(new NSUrl(page.AbsoluteUri)));
-            webView.SizeToFit();
             
             this.View.AddSubview(webView);
+			
+			webView.LoadRequest(NSUrlRequest.FromUrl(new NSUrl(page.AbsoluteUri)));
 		}
 	}
 }
