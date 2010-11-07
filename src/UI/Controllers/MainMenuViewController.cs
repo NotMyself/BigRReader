@@ -37,6 +37,8 @@ namespace UI
 			{
 				"Market Insights",
 				"Russell Newsroom",
+				"US Indexes",
+				"Global Indexes",
 				"Twitter"
 			};
 			
@@ -92,6 +94,8 @@ namespace UI
 		private Uri twitterFeed = new Uri("http://twitter.com/statuses/user_timeline/47657595.rss");
 		private Uri newsFeed = new Uri("http://feeds.feedburner.com/RussellcomNewsRelease");
 		private Uri marketFeed = new Uri("http://feeds.feedburner.com/RussellInvestmentsEducationCenter");
+		private Uri usIndexes = new Uri("http://www.russell.idmanagedsolutions.com/www/front.html");
+		private Uri globalIndexes = new Uri("http://russell.shark2.rolotec.ch/russell/teaser5.jsp");
 	
         public TableViewDelegate(MainMenuViewController controller)
         {
@@ -102,7 +106,7 @@ namespace UI
         {
 			try
 			{
-				UITableViewController nextController = null;
+				UIViewController nextController = null;
 
 				switch (indexPath.Row)
 				{
@@ -112,9 +116,16 @@ namespace UI
 				case 1:
 					nextController = new RssFeedViewController(newsFeed, "Russell Newsroom");
 					break;
-				case 2:
+				case 4:
 					nextController = new RssFeedViewController(twitterFeed, "Twitter");
 					break;
+				case 2:
+					nextController = new PageViewController(usIndexes, "US Indexes");
+					break;
+				case 3:
+					nextController = new PageViewController(globalIndexes, "Global Indexes");
+					break;
+
 				default:
 					break;
 				}
