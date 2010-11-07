@@ -55,18 +55,20 @@ namespace UI
             return items.Count;
         }
 
-        public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
+        public override UITableViewCell GetCell (UITableView tableView, NSIndexPath indexPath)
         {
-            var cell = tableView.DequeueReusableCell(cellId);
-            if (cell == null)
+        	var cell = tableView.DequeueReusableCell (cellId);
+        	if (cell == null)
             {
-                cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellId);
-            }
-			cell.TextLabel.Font = UIFont.FromName("Helvetica", 14.0f);
-			cell.TextLabel.LineBreakMode = UILineBreakMode.TailTruncation;
-            cell.TextLabel.Text = items[indexPath.Row].Title;
-			cell.DetailTextLabel.Font = UIFont.FromName("Helvetica", 12.0f);
-			cell.DetailTextLabel.Text = items[indexPath.Row].PublishedDate.ToString();
+        		cell = new UITableViewCell (UITableViewCellStyle.Subtitle, cellId);
+        	}
+        	cell.TextLabel.Font = UIFont.FromName ("Helvetica", 14.0f);
+        	cell.TextLabel.LineBreakMode = UILineBreakMode.TailTruncation;
+        	cell.TextLabel.Text = items[indexPath.Row].Title;
+        	cell.DetailTextLabel.Font = UIFont.FromName ("Helvetica", 12.0f);
+        	cell.DetailTextLabel.Text = string.Format ("Posted on {0} at {1}",
+				items[indexPath.Row].PublishedDate.ToShortDateString(),
+				items[indexPath.Row].PublishedDate.ToShortTimeString());
 			
 			cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
             return cell;
