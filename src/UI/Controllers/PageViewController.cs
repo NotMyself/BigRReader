@@ -24,18 +24,21 @@ namespace UI
             base.ViewDidLoad();
 			
 			
-			webView = new UIWebView { ScalesPageToFit = true };
+			webView = new UIWebView { ScalesPageToFit = true, BackgroundColor = UIColor.Cyan  };
+			webView.Frame = new RectangleF (0, 0, this.View.Frame.Width, this.View.Frame.Height - 44);
 			
 			webView.LoadStarted += delegate {
 				UIApplication.SharedApplication.NetworkActivityIndicatorVisible = true;
 			};
 			webView.LoadFinished += delegate {
 				UIApplication.SharedApplication.NetworkActivityIndicatorVisible = false;
+				webView.SizeToFit();
 			};
+			
 
 			webView.LoadRequest(new NSUrlRequest(new NSUrl(page.AbsoluteUri)));
             webView.SizeToFit();
-            webView.Frame = new RectangleF (0, 0, this.View.Frame.Width, this.View.Frame.Height - 44);
+            
             this.View.AddSubview(webView);
 		}
 	}
