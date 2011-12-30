@@ -16,8 +16,6 @@
 	<string>1.0.0.0</string>
 	<key>MinimumOSVersion</key>
 	<string>5.0</string>
-	<key>NSMainNibFile</key>
-	<string>MainWindow</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
